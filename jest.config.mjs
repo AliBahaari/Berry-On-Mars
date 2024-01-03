@@ -13,7 +13,7 @@ const config = {
   testEnvironment: 'jest-environment-jsdom',
   preset: 'ts-jest',
   testEnvironmentOptions: {
-    url: 'http://localhost:3000',
+    url: 'https://berry-on-mars.vercel.app',
   },
 }
 

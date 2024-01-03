@@ -35,7 +35,7 @@ function LogInForm() {
       }
       return
     }
-    const { data: logInResponse } = await axios.post('http://localhost:3000/logIn', {
+    const { data: logInResponse } = await axios.post('https://berry-on-mars.vercel.app/logIn', {
       ...formValues,
     })
     if (logInResponse?.status === 200) {

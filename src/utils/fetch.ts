@@ -5,12 +5,12 @@ type fetchPropsType = {
   password?: string
 }
 
-export const fetch = async ({username='', password=''}: fetchPropsType) => {
-  const { data: logInData } = await axios.post('http://localhost:3000/logIn', {
+export const fetch = async ({ username = '', password = '' }: fetchPropsType) => {
+  const { data: logInData } = await axios.post('https://berry-on-mars.vercel.app/logIn', {
     username,
-    password
+    password,
   })
-  const { data: filterItemsData } = await axios.get('http://localhost:3000/filterItems')
+  const { data: filterItemsData } = await axios.get('https://berry-on-mars.vercel.app/filterItems')
 
   return {
     logInData,
